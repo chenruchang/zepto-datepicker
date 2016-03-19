@@ -1,5 +1,5 @@
 # zepto-datepicker
-基于Zepto和IScroll的手机端日期选择组件，支持页面多个组件同时存在。
+基于Zepto和IScroll的手机端日期选择组件，支持页面多个组件同时存在，在手机微信、UC等浏览器中测试通过。
 
 $('select').datepicker({
             format: "yyyy-MM-dd HH:mm:ss", // Set the date format
