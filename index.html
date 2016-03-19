@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Zepto datepicker demo</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/zepto-datepicker.css">
+
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/lib/iscroll.js"></script>
+    <script src="js/zepto-datepicker.js"></script>
+</head>
+<body>
+<div style="height:50px;">
+    <input type="text" class="picktime" placeholder="点击选择日期" style="width:200px;">
+</div>
+<div style="height:50px;">
+    <input type="text" class="picktime" placeholder="点击选择日期" style="width:200px;">
+</div>
+<div style="height:50px;">
+    <input type="text" id="picktime" placeholder="点击选择日期" style="width:200px;">
+</div>
+<script>
+    $(function () {
+        $('.picktime').datepicker();
+
+        $('#picktime').datepicker({
+            format: "yyyy-MM-dd HH:mm:ss", // Set the date format
+            yearStart: 2010, // Set the minimal year
+            yearEnd: 2020 // Set the maximal year
+        });
+    });
+</script>
+</body>
+</html>
